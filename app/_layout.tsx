@@ -44,7 +44,7 @@ export default function RootLayout() {
         />
 
         <Tabs.Screen
-          name="cartScreen"
+          name="garageLocationScreen"
           options={{
             title: "Cart Screen",
             tabBarIcon: ({ focused, size }) => (
