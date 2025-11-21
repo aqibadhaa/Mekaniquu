@@ -7,6 +7,7 @@ import "tailwind-variants";
 import { tv } from "tailwind-variants";
 import QuickServices from "./quickServiceSection";
 import PanduanMasaPakai from "./tips&trick";
+import PanduanMasaPakaiTire from "./tips&trickTireChange";
 
 import "./globals.css";
 
@@ -19,15 +20,8 @@ const searchBoxStyles = tv({
   }
 });
 
-
-
 export default function App() {
   const { mainContainer, searchBoxContainer, searchBox, seviceContainer } = searchBoxStyles();
-
-
-
-
-
   const [loaded] = useFonts({
     PetitRegular: require("../assets/fonts/PetitFormalScript-Regular.ttf"),
     Carattere: require("../assets/fonts/Carattere-Regular.ttf"),
@@ -44,12 +38,12 @@ export default function App() {
 
         <View className={searchBoxContainer()}>
           <View className={searchBox()}>
-            <Ionicons name="search" size={20} color="gray" style={{ marginRight: 15 }} />
+            <Ionicons name="search" size={22} color="gray" style={{ marginRight: 15 }} />
             <TextInput
               style={{ flex: 1, fontSize: 14, fontWeight: '500', marginLeft: 80 }}
             />
           </View>
-          <IconButton icon="menu" />
+          <IconButton icon="menu" size={30} />
         </View>
 
         <View className="flex-1 bg-neutral-100 mb-10">
@@ -58,6 +52,10 @@ export default function App() {
 
         <View className="flex-1 bg-neutral-100 mt-10">
           <PanduanMasaPakai></PanduanMasaPakai>
+        </View>
+
+        <View className="flex-1 bg-neutral-100 mt-10">
+          <PanduanMasaPakaiTire></PanduanMasaPakaiTire>
         </View>
 
         <View className="flex-1 bg-red-200">

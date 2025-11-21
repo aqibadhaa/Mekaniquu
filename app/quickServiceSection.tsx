@@ -9,7 +9,7 @@ const services = [
     {
         id: 1,
         title: "Oil Change",
-        subtitle: "lubricated Your Machine",
+        subtitle: "Lubricated Your Machine",
         bg: "bg-orange-500",
         icon: OilChangeIcon,
         iconType: "svg",

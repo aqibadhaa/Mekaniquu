@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, ScrollView, Text, View } from 'react-native';
 
-const ImageBanner = require('../assets/hero_PN1141_OilChanges_Banner.jpg');
+const ImageBannerTire = require('../assets/images/tire-shop-blog-x.jpg');
 
 interface InfoItemProps {
     children: React.ReactNode;
@@ -16,12 +16,12 @@ const InfoItem: React.FC<InfoItemProps> = ({ children }) => (
     </View>
 );
 
-const PanduanMasaPakai: React.FC = () => {
+const PanduanMasaPakaiTire: React.FC = () => {
     return (
         <ScrollView className="flex-1 bg-white rounded-t-3xl rounded-b-xl mb-10 -mt-12">
             <View className="rounded-t overflow-hidden -mb-3">
                 <Image
-                    source={ImageBanner}
+                    source={ImageBannerTire}
                     className="w-full h-48"
                     resizeMode="cover"
                 />
@@ -33,10 +33,10 @@ const PanduanMasaPakai: React.FC = () => {
                 <View className="mb-4">
                     <View className="flex-row items-center mb-2">
                         <View className="w-6.6 h-6 rounded-full bg-blue-100 items-center justify-center mr-2">
-                            <Text className="text-blue-600 text-lg ">🛢️</Text>
+                            <Text className="text-blue-600 text-xl">🛞</Text>
                         </View>
                         <Text className="text-xl font-bold text-gray-800">
-                            Penggantian Oli Mesin (Oil Change)
+                            Penggantian Ban (Tire Change)
                         </Text>
                     </View>
                     <Text className="text-base text-gray-600 leading-relaxed px-8 text-justify">
@@ -90,4 +90,4 @@ const PanduanMasaPakai: React.FC = () => {
     );
 };
 
-export default PanduanMasaPakai;
+export default PanduanMasaPakaiTire;
